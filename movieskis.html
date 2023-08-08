@@ -1,0 +1,1309 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous" />
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/d87b21cf08.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="icon" href="https://ik.imagekit.io/oeyoakvay/smart_carlogo.png?updatedAt=1682267338877" type="x/icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+    <link rel="icon" href="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v7hrwudmu1agxikj4gob" type="image/x-icon">
+    <title>Game Corner</title>
+</head>
+
+<body>
+    <div class=" justify-content-center">
+        <nav class="navbar navbar-expand-lg  fixed-top">
+            <div class="container-fluid ">
+                <a class="navbar-brand nv1" href="#"> <span><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v7hrwudmu1agxikj4gob" class="logo">
+                        Game Corner</span>
+                </a>
+                <button class="navbar-toggler d-none" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-"><i class="fa-solid fa-bars nv1 mr-2 barBtn"></i></span>
+                </button>
+                <a class="btn  d-lg-none" data-bs-toggle="offcanvas" href="#offcanvasExample" role="button" aria-controls="offcanvasExample">
+                    <i class="fa-solid fa-bars barBtn"></i>
+                </a>
+                <!-- Button trigger modal -->
+                <!-- Modal -->
+                <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasExampleLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <div class="navbar-nav text-center">
+                            <a class="nav-link nv1 " href="#homeID_section" title="Home"><button class="btn btn1" id="homeDetails">Home</button></a>
+                            <a class="nav-link nv1 " href="#shopContainer" title="Shop"><button class="btn btn1" id="shopDetails">Shop</button></a>
+                            <a class="nav-link nv1 " href="#faqDetailsContainer" title="FAQ"><button class="btn btn1" id="faqDetails">FAQ</button></a>
+                            <a class="nav-link nv1" href="#contactDetails" title="Contact"><button class="btn btn1" id="contactDetails">Contact</button></a>
+                        </div>
+                        <div class="width-btn d-flex flex-row justify-content-center">
+                            <button class="btn btn1 d-block d-lg-none mr-2 shadow" id="logInBtn" title="Log In">Log In</button>
+                            <br>
+                            <button class="btn btn1  d-block d-lg-none" title="Cart button" id="cartBtn1"> <i class="fa-solid fa-cart-shopping"></i></button>
+
+                        </div>
+                        <div class="d-flex flex-row justify-content-center">
+                        </div>
+                        <div class="d-flex flex-row justify-content-end ml-auto">
+                            <button class="btn btn1 d-none d-lg-block mr-2 shadow" id="logInBtn1" title="Log In">Log In</button>
+                            <button class="btn button d-none d-lg-block" title="Cart button" id="cartBtn"> <i class="fa-solid fa-cart-shopping icon-social"></i></button>
+                        </div>
+                    </div>
+                    <div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNavAltMarkup">
+
+            </div>
+        </nav>
+
+
+
+        <div class="main">
+            <div class="padding-all  p-3" id="mainCont">
+                <div class="d-flex  flex-row justify-content-center mt-3" id="homeID_section">
+                    <div class="info-card mt-5 " id="infoCard">
+                        <div class="row">
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <h3>Play Wild</h3>
+                                <h1>ONLINE<img src="https://userscontent2.emaze.com/images/cfb1b8c1-0e0a-4ce4-8987-177efad81d77/d7cfa44f45b5702501b2fa515146d9cc.png" class="ampersand">OFFLINE Zone</h1>
+                                <p class="desc"><i class="fa-solid fa-gamepad icon"></i> <span class="a">A</span>_blockchain gaming mechanic where players earn crypto tokens as rewards for; completing tasks, winning battles against other players, or progressing through levels within a game</p>
+                                <p>
+                                    <a href="https://play.google.com/store/apps/details?id=com.netmarble.mherosgb" target="_blank"><button class="btn btn1"> Play Game</button></a>
+                                    <a href="#top-paid"><button class="btn btn2 ml-2"> <i class="fa-solid fa-bag-shopping"></i> Shop</button></a>
+                                </p>
+                            </div>
+                            <div class="col-12 col-sm-6 col-md-6">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <div class="imageMellow ">
+                                        <img src="https://bestteestore.net/wp-content/uploads/2022/05/Marvel-Avengers-Endgame-Iron-Man-Time-Travel-Platform-Logo-T-Shirt.png" class="mellow">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <p class="available ml-1 mt-2">Available On :</p>
+                            <p>
+                                <img src="https://logodix.com/logo/433798.png" class="available-logo">
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!--Shop Container-->
+                <div id="shopContainer">
+                    <div class="shopContainer mt-3">
+                        <h5 id="topFree" class="ml-3 mb-3">Top Free</h5>
+                        <h5 id="topPaid" class="ml-3 mb-3">Top Paid</h5>
+                        <h5 id="topEnt" class="ml-3 mb-3">Top Entertaining</h5>
+                        <div class="btnsShop">
+                            <div class="d-flex flex-row  ml-3">
+                                <button class="btnShop" id="topFreeBtn">Top Free</button>
+                                <h5 id="topPaid"></h5>
+                                <button class="btnShop ml-2 mr-2" id="topBtn">Top Paid</button>
+                                <h5 id="topEnt"></h5>
+                                <button class="btnShop" id="topEntBtn">Top Entertaining </button>
+                            </div>
+                        </div>
+                        <!--Top Free-->
+                        <div id="topFreeId">
+                            <div class="row">
+                                <div class="col-6 col-lg-4">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://cf.geekdo-images.com/V9TEN3MbM4MMw4NOghhnRw__itemrep/img/m_zid1C7Msw4rkKIac2A3SSAJ0c=/fit-in/246x300/filters:strip_icc()/pic922720.jpg" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Mono Poly Go!
+                                                    <br> <span class=" new">NEW </span><span class="p31">*Action</span>
+                                                    <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://play-lh.googleusercontent.com/fLrUE4p6HV3ikbzBWLYSb18JI5V0QahvUaD5gxURNiOQJp32jB31f-EFeNzWcYICn2w=w240-h480-rw" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Merge Safari..
+                                                    <br> <span class=" new"> </span><span class="p31">*Simmulation</span>
+                                                    <br><span class="p31">4.4<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://i0.wp.com/is1-ssl.mzstatic.com/image/thumb/Purple116/v4/48/c9/ac/48c9acf7-1137-ce20-3481-9b8dba688501/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.jpg?w=1200&ssl=1" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Numbers game
+                                                    <br> <span class=" new"> </span><span class="p31">*Puzzle</span>
+                                                    <br><span class="p31">4.8<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://assets-prd.ignimgs.com/2022/03/01/roblox-sq-1646155371025.jpg" class="sideImg1">
+                                            <div>
+                                                <p class="p3 ml-2">Roblox
+                                                    <br> <span class=" new"> </span><span class="p31">*Adventure</span>
+                                                    <br><span class="p31">4.4<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2023/04/12/642a93f652e23.png" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Subway Surfers
+                                                    <br> <span class=" new"> </span><span class="p31">*Arcade</span>
+                                                    <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://imgs2.dab3games.com/gyro-sphere-game25.png" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Going Balls
+                                                    <br> <span class=" new">NEW </span><span class="p31">*Casuals</span>
+                                                    <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 d-none d-xl-block">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://play-lh.googleusercontent.com/vl6aNuDVH5TTUvd1ERJvVeOIg5XnaqygoTHpUmzWx3Y9PYlv2k7arFiAvYCWa_EIpFE" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Brain Test!
+                                                    <br> <span class=" new"></span><span class="p31">*Puzzle</span>
+                                                    <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 d-none d-xl-block">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://play-lh.googleusercontent.com/roGkhpU3GfmHjgGr3xfbyEInDmUNYZloBgLdfA9gOCAnlOejqWozqPUaEY26nGlzVxE" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Magic Tiles 3
+                                                    <br> <span class=" new"> </span><span class="p31">*Music</span>
+                                                    <br><span class="p31">3.9<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6 col-lg-4 d-none d-xl-block">
+                                    <div class="shopCard">
+                                        <div class="d-flex flex-row">
+                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR6WZ3YRHMQYPWQxOwWDyLzcFc6GL2giCdssg&usqp=CAU" class="sideImg1 ml-2">
+                                            <div>
+                                                <p class="p3 ml-2">Weapon Craft Run
+                                                    <br> <span class=" new">NEW </span><span class="p31">*Action</span>
+                                                    <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <button class="btn" id="viewMoreBtn" disable>
+                                VIEW MORE
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <!--Top Paid-->
+                <div id="topPaidId">
+                    <div class="row">
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://img.poki.com/cdn-cgi/image/quality=78,width=600,height=600,fit=cover,f=auto/12a0ed7c6bc09b73d6558c6f69ed7f5f.png" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Mine Craft
+                                            <br> <span class=" new"> </span><span class="p31">*Arcade</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 299</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://thumbnails.pcgamingwiki.com/a/a0/Bloons_TD_6_cover.jpg/300px-Bloons_TD_6_cover.jpg" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Bloons TD 6
+                                            <br> <span class=" new">NEW </span><span class="p31">*Action</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 499</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://cdn.europosters.eu/image/750/posters/five-nights-at-freddys-group-i61034.jpg" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">At Freddy's!
+                                            <br> <span class=" new"> </span><span class="p31">*Strategy</span>
+                                            <br><span class="p31">4.2<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 199</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://i.pinimg.com/736x/ec/be/50/ecbe5098f00cd5eaea030ace2861c742.jpg" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Incredixbox
+                                            <br> <span class=" new"> </span><span class="p31">*Music</span>
+                                            <br><span class="p31">4.8<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 259</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://assets1.ignimgs.com/2019/01/17/terraria---button-1547745886957.jpg" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Terraria
+                                            <br> <span class=" new"> </span><span class="p31">*Adventure</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 599</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://howlongtobeat.com/games/64830_Evoland_Legendary_Edition.jpg" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Evoland
+                                            <br> <span class=" new"> </span><span class="p31">*Action</span>
+                                            <br><span class="p31">3.6<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 299</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-none d-xl-block">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSDNxeFKkSkWfMTkvChHu7qJ8TQwMHMyraNf1iuL3MkIlG05GRJ4s4xwxH2-03dM2RHFkc&usqp=CAU" class="sideImg1 ml-2">
+                                    <p class="p3 ml-2">Mini Metro
+                                        <br> <span class=" new"> </span><span class="p31">*Action</span>
+                                        <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i>
+                                            <i class="fa-solid fa-indian-rupee-sign rup"> 1199</i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-none d-xl-block">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/aX189AU0ELF6bEDEy2JGXKw7ThAEVO8BElKU6ah1BEObTNS-Y4p1_pq_tgcmjocSjM1M" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Pocket city2
+                                            <br> <span class=" new"> </span><span class="p31">*Action</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 899</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-none d-xl-block">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://upload.wikimedia.org/wikipedia/en/c/cb/The_room_2012_vg_cover.png" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">The Room
+                                            <br> <span class=" new"> </span><span class="p31">*Puzzle</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i>
+                                                <i class="fa-solid fa-indian-rupee-sign rup"> 1199</i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--TOP Entertaining-->
+                <div id="topEntId">
+                    <div class="row">
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2018/11/5be2ce0e7f1ff.png" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Candy Crush Saga
+                                            <br> <span class=" new"> </span><span class="p31">*Casual</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="data:image/jpeg;base64,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" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Royal Match
+                                            <br> <span class=" new"> </span><span class="p31">*Puzzle</span>
+                                            <br><span class="p31">4.6<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://dvojaj7u7jwrp.cloudfront.net/user/images/654003/original/township.jpg?1629423860" class="sideImg1 ml-2">
+                                    <p class="p3 ml-2">Township
+                                        <br> <span class=" new"> </span><span class="p31">*Casual</span>
+                                        <br><span class="p31">4.6<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://lh3.googleusercontent.com/LxQBOujV9WD4TG0Qs-GYtayZJdH0IM0d3iwQEYU0o9W-hhiqnlXTnpeXPWddfCnLKoO9wKU9WT2v4qtzCfx4NAaQAICubAm6caOFCuunrmb_B7w=e365-pa-nu-w824-rw" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Pokemon Go
+                                            <br> <span class=" new"> </span><span class="p31">*Adventure</span>
+                                            <br><span class="p31">4.1<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/LByrur1mTmPeNr0ljI-uAUcct1rzmTve5Esau1SwoAzjBXQUby6uHIfHbF9TAT51mgHm" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Clash Of Clans
+                                            <br> <span class=" new"> </span><span class="p31">*Action</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMatBEl3mbzsUVU1bAnfN_IicyH4hzX2N9aQ&usqp=CAU" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Toon Blast
+                                            <br> <span class=" new"> </span><span class="p31">*Puzzle</span>
+                                            <br><span class="p31">4.6<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-none d-xl-block">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://cdna.artstation.com/p/assets/covers/images/055/511/972/large/joe-ferrari-joe-ferrari-thumbdragon.jpg?1667140458" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Merge Dragons!
+                                            <br> <span class=" new"> </span><span class="p31">*Puzzle</span>
+                                            <br><span class="p31">4.6<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-none d-xl-block">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/xGUUxRbwuPCfsblhvlBvLs5rFMihb4PxnhN0uWed0Hh_yFxwqMfuLV9wfcxyiiIuOhY" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Top War
+                                            <br> <span class=" new"> </span><span class="p31">*Action</span>
+                                            <br><span class="p31">4.5<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6 col-lg-4 d-none d-xl-block">
+                            <div class="shopCard">
+                                <div class="d-flex flex-row">
+                                    <img src="https://playrix.com/upload/iblock/b5c/b5ce46a14d5ce9097e49f8afb5b6093d.jpg" class="sideImg1 ml-2">
+                                    <div>
+                                        <p class="p3 ml-2">Fishdom
+                                            <br> <span class=" new">NEW </span><span class="p31">*Puzzle</span>
+                                            <br><span class="p31">4.6<i class="fa-solid fa-star p31 mr-3"></i></span>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Recommended Games-->
+
+                <div class="LatestGames" id="LatestGames">
+                    <h5 class="ml-3 mt-2">Recommend for you</h5>
+                    <ul class="nav nav-pills  mt-2 justify-content-end" id="pills-tab" role="tablist">
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Play</button>
+                        </li>
+                        <li class="nav-item" role="presentation">
+                            <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Now</button>
+                        </li>
+                    </ul>
+                </div>
+                <br>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
+                        <div class="scroller">
+                            <div class="scroller-item">
+                                <img src="https://img.gurugamer.com/2020/06/03/a940fbd662d1a623df3710df8faedf7a-ce79.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://downloadr2.apkmirror.com/wp-content/uploads/2020/07/15/5f1abb8dacd05.png" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Carrom Pool:Disc <br><span class="p5 mb-3">Sports</span><br><span class="p5">4.2 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex  "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://m.media-amazon.com/images/I/910DbQd+nhL.png" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/N0UxhBVUmx8s7y3F7Kqre2AcpXyPDKAp8nHjiPPoOONc_sfugHCYMjBpbUKCMlK_XUs" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Hill Climb Race <br><span class="p5 mb-3">Racing</span><br><span class="p5">4.2 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://image.winudf.com/v2/image1/Y29tLm91dGZpdDcubXl0YWxraW5ndG9tZnJpZW5kc19zY3JlZW5fNl8xNjczNTQwMjU0XzAzNA/screen-6.webp?fakeurl=1&type=.webp" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://kingmodapk.net/media/2020/09/_3/800x600/My-Talking-Tom-Friends.png" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">My TalKing Tom Freinds<br><span class="p5 mb-3">Casual</span><br><span class="p5">4.3 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row  "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://images6.alphacoders.com/900/thumb-1920-900929.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src='https://upload.wikimedia.org/wikipedia/en/b/bc/Candy_Crush_logo.png' class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Candy Crush Saga <br><span class="p5 mb-3">Casual</span><br><span class="p5">4.4 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://play-lh.googleusercontent.com/Z4FL2xmFfV9i2y4O1XcFIqBCj7pY_XeynYv9Dfbikfb_ZT4BAuZNzr4zQgf6tBka7-0=w416-h235-rw" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://is5-ssl.mzstatic.com/image/thumb/Purple18/v4/77/70/28/77702802-21c1-086a-63a6-22818d7d7245/source/512x512bb.jpg" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Fruit Flash <br><span class="p5 mb-3">Casual</span><br><span class="p5">4.2 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://i.ytimg.com/vi/HxeFwnSjfYw/maxresdefault.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/OKakH1IOZzM8RCTCYSB9rjAkByYLV3Xq6olEI2lbrk94HO2ekS7gFnlVDOyaC2BEZV4" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Real Chess 3D <br><span class="p5 mb-3">Board</span><br><span class="p5">4.3 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://www.gaming.net/wp-content/uploads/2023/01/Cooking-Madness-1.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/894SYZCypnken3Qtxjv-j15XCoZ1GUFvaIRxX4EAvqhMcyyGmi0zmQ9RvkAKr-wzLSU" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Cooking Party games<br><span class="p5 mb-3">Arcade</span><br><span class="p5">4.1 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row  "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://cdn.dnaindia.com/sites/default/files/styles/full/public/2021/06/03/977298-bmi.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="data:image/jpeg;base64,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" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Pubg Battles Grounds<br><span class="p5 mb-3">Action</span><br><span class="p5">4.3 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row  "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://www.familyeducation.com/sites/default/files/2018-02/8%20Ball%20Feature.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/bPz1guJ6FHF3oIOEy3KqwpaDDKO-hLRaZoyzmM8bLFLN8fWm6L0_EuUnkwv9iqPo3Ag" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">8 ball pool<br><span class="p5 mb-3">Action</span><br><span class="p5">4.3 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row"><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                        <div class="scroller">
+                            <div class="scroller-item">
+                                <img src="https://gamingonphone.com/wp-content/uploads/2021/07/asphalt-nitro-2.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/xMRV92isAcFWE8c2sZk90mZNxBICaVU1BSjsbf65g1z9tElBNOUeJpNrwH4Kcqu8TQ" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Asphalt Nitro-2 <br><span class="p5 mb-3">Racing</span><br><span class="p5">4.2 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://games.lol/wp-content/uploads/2019/08/ninja-arashi-pc-full-version-1.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://gameforge.com/de-DE/littlegames/includes/images/games/18765_6050882fc1053.jpg" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Ninja Arashi <br><span class="p5 mb-3">Board</span><br><span class="p5">4.4 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://i.ytimg.com/vi/ijuEb56iveU/maxresdefault.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://i0.wp.com/gamingonphone.com/wp-content/uploads/2020/04/Farm-1-1.jpg" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Farm City <br><span class="p5 mb-3">Casual</span><br><span class="p5">4.4 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://i.ytimg.com/vi/LiN2ryzVpWU/maxresdefault.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/CZg8-PBSGhpaajpsQQ9napLrxhHjvEvP5ck85vnaVJN64nm0jOF51x0nvoWJjQnF5ys" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Bubble Shooter Legend <br><span class="p5 mb-3">Casual</span><br><span class="p5">4.1 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://liteapks.com/wp-content/uploads/2022/12/modern-strike-online-pvp-fps-1.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/HvDGNV7ul3uHm6ZkeWNKEoJ0k0AYj-6GTxZ5DsX4-0I0M9hWdiejkZrFteo_2zgkc78" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Fps Online Strike <br><span class="p5 mb-3">Action</span><br><span class="p5">4.3 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://static.toiimg.com/photo/msid-89450947/89450947.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://play-lh.googleusercontent.com/9zACfwWC3nLgQls-vt4lpz8N0Vv4zWMUXtcFth3oBT5789vmsTktH_fCNXHsGdmtOw4" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Free Fire MAX <br><span class="p5 mb-3">Action</span><br><span class="p5">4.3 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="scroller-item">
+                                <img src="https://gameshunters.com/wp-content/uploads/2018/09/download-Doodle-Army-2-Mini-Militia-pc.jpg" class="card1" />
+                                <div class="d-flex flex-row">
+                                    <img src="https://modlonely.com/wp-content/uploads/2023/05/Mini-Militia-Mod-By-Sahad-Ikr.webp" class="sideImg ml-2 mt-1 mr-2">
+                                    <div>
+                                        <p class="p3">Mini Militia-War.io <br><span class="p5 mb-3">Action</span><br><span class="p5">4.1 <i class="fa-solid fa-star p5"></i></span>
+                                        </p>
+                                        <div class="d-flex flex-row justify-content- "><button class="btn btnLatest">Install</button>
+                                            <button class="btnLatest btn ml-3" title="Add To Whish List"><i class="fa-solid fa-bookmark"></i></span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--Premium Container-->
+                <h5 class="ml-2 mt-5"> Premium games</h5>
+                <hr>
+                <div class="premiumContainer mt-4 d-flex flex-row justify-content-center">
+                    <!--Premium game carousel-->
+                    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                            </div>
+                        </div>
+                        <!--carousel-->
+                        <div id="carouselExampleFade" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active sec">
+                                    <!--First Slide-->
+                                    <div class="row">
+                                        <div class="col-12 col-xl-4">
+                                            <img src="https://play-lh.googleusercontent.com/J4hwKvu1qB00lNxuvmzK7Tir0W5HQ30Ld3ntdFb6brS9D_QgvPi9w8GjPFTUVkMjMvY=w416-h235-rw" class="shopImg text-center w-100" alt="...">
+                                            <div class="shopCard">
+                                                <div class="d-flex flex-row">
+                                                    <img src="https://play-lh.googleusercontent.com/t8VJAWO7ioG9uGhkPOs7q7ZfKjigeMGFBq134VJKLVU_jKDn9VEz9Oqg1iXQ9axI7aE=w240-h480-rw" class="sideImg1 ml-2">
+                                                    <div>
+                                                        <p class="p3 ml-2">Hitman Snipper
+                                                            <br> <span class="p31">Action </span>
+                                                            <br><span class="p31">4.1 <i class="fa-solid fa-star str mr-3"></i></span> <br><span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>499</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d-none d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/8Z3SnjNGDRLMsT1KqA-UZzSZhQV10a1_ccqGhEt0_yHBrZVSVYim9iZ6BLNlJG61PuE=w416-h235-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/9xCH22_9g9b7beiOTyH9Ym0R2qW54ut5cRNUoMCz0B6s8Fmm1P8-kp9-gzZ-P3-Yiw=s64-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">Shadow Fight 2 Special..
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.7 <i class="fa-solid fa-star str mr-3"></i></span><br> <span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>999</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d-none d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/4AbP9J4y-ralHgvodd7sA_NCbX5KGxDkDM896Ku5yqhC6fhrFE8x2Df-53jaa24hMmEA=w416-h235-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/ANrEYqPAYay93atxcnCsAyeo9AXSRaIcW-OFpEKbbwkG72XRCGYVSzYH27bQV8Oif9Y=w240-h480-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">Zombie Age 3 Premium:..
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.5 <i class="fa-solid fa-star str mr-3"></i></span><br> <span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>499</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item sec">
+                                    <!--Second slide-->
+                                    <div class="row">
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d-none d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/b9FStF4ibii8D6BT8e_trZVHfh84TccSR_-b6dubQQvhD_0AlBwxLmv97eM5Q6xlsHA=w526-h296-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/qOU2XdcZokFZoHaKTqTPE_XKhBdgaVerXMMb35Sd4XrWUcqJYgisnkNwzkqEn2mO1Ac=s64-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">Cyber Stickman
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.1 <i class="fa-solid fa-star str mr-3"></i></span><br><span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>299</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d-none d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/IhTRU67GlI-NsLLOdqfNx5GJpHlD2Z3-X1suVprmMePMUu-XnGhamJ64ONcOtdJB_08=w526-h296-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/tj0WwmWMWr5eVs1ah3QHWJsMDz3z3VZNFibahuEDXRu3UnDwjyykIDFItiKOvAnDig=s48-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">eFootball
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.8 <i class="fa-solid fa-star str mr-3"></i></span><br> <span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>399</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d- d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/ce-Nf4b4xftyK3yybnM2iao9Xy6OS5FQ1luiqOVlVbcYx5cJ8U6KG4cIDyXIoVYlV1cz=w526-h296-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/91Z0wUAYCybqqKnv78_1gADFqpLnBO3JZlRyUASUl05VTs4wM88bZIzcp4NgAgymuJRc=s64-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">Demon Hunter
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.8 <i class="fa-solid fa-star str mr-3"></i></span><br> <span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>399</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <div class="carousel-item sec">
+                                    <!--Third Slide-->
+                                    <div class="row">
+                                        <div class="col-12 col-xl-4">
+                                            <img src="https://play-lh.googleusercontent.com/Rvy7S4pu1HsJpUy0YI1rWfVi_eUXxZzQRDVWvSINeDDrRG9hVGkdlayVsr3K3Pm0T8g=w526-h296-rw" class="shopImg w-100" alt="...">
+                                            <div class="shopCard">
+                                                <div class="d-flex flex-row">
+                                                    <img src="https://play-lh.googleusercontent.com/g0t9AT6_vSPCQ7NjvunlLcGumBWIqz1od2eedmL17pX_YWwGD9TJck-bAb10BmQ6Gcs=s64-rw" class="sideImg1 ml-2">
+                                                    <div>
+                                                        <p class="p3 ml-2">Shadow Of Death:Dark Knight
+                                                            <br><span class="p31">Action</span>
+                                                            <br><span class="p31">4.7 <i class="fa-solid fa-star str mr-3"></i></span><br> <span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>899</span>
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d-none d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/KZ8Bm6jLvhxEI_MH4fFLtnUfjwleCQEzfF2eNC-NlX5-lfD_oh3-U2t7IlO2umalWQ=w526-h296-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/9zACfwWC3nLgQls-vt4lpz8N0Vv4zWMUXtcFth3oBT5789vmsTktH_fCNXHsGdmtOw4=s64-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">Free Fire
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.1 <i class="fa-solid fa-star str mr-3"></i></span>br> <span class="p31"><i class="fa-solid fa-indian-rupee-sign"></i>0</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-xl-4">
+                                            <div class="d-none d-xl-block">
+                                                <img src="https://play-lh.googleusercontent.com/cw86ny78mbNHVRDLlhw1fxVbZxiYFC7yYDRY3Nt2dnRGihRhxo1eOy4IjrSVVzKW9Is=w526-h296-rw" class="shopImg w-100" alt="...">
+                                                <div class="shopCard">
+                                                    <div class="d-flex flex-row">
+                                                        <img src="https://play-lh.googleusercontent.com/3ZKfMRp_QrdN-LzsZTbXdXBH-LS1iykSg9ikNq_8T2ppc92ltNbFxS-tORxw2-6kGA=s64-rw" class="sideImg1 ml-2">
+                                                        <div>
+                                                            <p class="p3 ml-2">Super Mario Run
+                                                                <br><span class="p31">Action</span>
+                                                                <br><span class="p31">4.2 <i class="fa-solid fa-star str mr-3"></i></span><br>
+                                                                <span class="p31">
+                                                                    <i class="fa-solid fa-indian-rupee-sign"></i>99</span>
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+                            <span class="carousel-control- " aria-hidden="true">
+                                <p href="" class="previous round">&#8249;</p>
+                            </span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+                            <span class="carousel-control- " aria-hidden="true">
+                                <p href="" class="next round">&#8250;</p>
+                            </span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                <hr>
+                <!--COSOLE & ACCESORIES-->
+                <div class="mt-4">
+                    <h5>Consoles & Accessories </h5>
+                    <div class="scroller">
+                        <div class="scroller-item"><img src="https://www.zdnet.com/a/img/resize/0311b14619e248c938e1e6e42cc0e868927345dc/2023/01/10/fe6fc344-ba1c-4205-9aa5-f6e7dea901ee/gettyimages-1397487342.jpg?auto=webp&fit=crop&height=1200&width=1200" class="card1">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Apple Vision Pro <br><span class="p5 mb-3">virtual reality headset</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">2,80,999</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                    <br>
+                                    <p>Not Availble</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item text-center"><img src="https://cdn.shopify.com/s/files/1/0636/8837/6542/products/7_cf0c46ff-b0a4-4b28-936c-7f3153c74d3e.png?v=1664170588" class="card2">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Nintendo Super Switch.. <br><span class="p5 mb-3">Ninja Wireless</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">7,999</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="scroller-item"><img src="https://gmedia.playstation.com/is/image/SIEPDC/ps4-product-thumbnail-01-en-14sep21?$facebook$" class="card3">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">sony PlayStation <br><span class="p5 mb-3">1 TB Pre Owned</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">30,999</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item"><img src="https://www.videogameschronicle.com/files/2022/07/1_6ttpsxPrFpUoux06etgA4g.png" class="card4">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Ps4 Controller <br><span class="p5 mb-3">Wireless</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">4,293</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item"><img src="https://ik.imagekit.io/faskf16pg/sub_category/Gaming_Console/gaming-controllers-on-rent-sharepal-1_6Fh7RYyhRQ.png?updatedAt=1677594574131" class="card5">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Xbox Core Controller <br><span class="p5 mb-3">Gaming</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">4,849</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item"><img src="https://resource.logitechg.com/w_692,c_limit,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/gaming/en/products/g733/gallery/g733-white-gallery-1.png?v=1" class="card6">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Logitech G733 <br><span class="p5 mb-3">Headset</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">12,795</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item"><img src="https://media.steelseriescdn.com/thumbs/catalog/items/62611/b473ebcb7b3643b293c294f5935729e0.png.1200x627_q100_crop-fit_optimize.png" class="card7">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">SteelSeries Aerox 3 <br><span class="p5 mb-3">Wired</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">2,80,999</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item"><img src="https://assets.mmsrg.com/isr/166325/c1/-/ASSET_MMS_75427258/mobile_786_587_png/SONY-PS5-Pulse-3D-Wireless-Headset" class="card8">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Sony PULSE 3 <br><span class="p5 mb-3">Wireless</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">2,80,999</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item"><img src="https://www.giztop.com/media/catalog/product/cache/16c8d0750a29c828f25a0e7d7ec24d2a/r/e/redmi_buds_4_harry_potter.png" class="card9">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">Xiami Redmi<br><span class="p5 mb-3">Buds</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">1,899</i> <i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="scroller-item text-center">
+                            <img src="https://cdn.shopify.com/s/files/1/0055/5515/9126/files/index-d-1.png?v=1576218986" class="card10">
+                            <div class="item-info p-1 text-center">
+                                <p class="p3">T-max<br><span class="p5 mb-3">Gaming Chair</span><br></p>
+                                <div class="d-flex flex-row justify-content-center p3"><i class="fa-solid fa-indian-rupee-sign p31">13,099</i><i class="fa-sharp fa-regular fa-heart icon1 ml-4"></i></span>
+                                </div>
+                            </div>
+                            <button class="btn1" id="viewMore">View More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                        </div>
+
+                    </div>
+                    <hr>
+                    <div class="shopCart">
+                        <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <h1 class="line mt-4">CALL<span class="of">OF</span>DUTY</h1>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center">
+                                    <p class="rating">4.5<i class="fa-solid fa-star ratingStr mr-3"></i></p>
+                                </div>
+                                <div class="d-flex flex-row justify-content-center mb-3">
+                                    <button class="btn11">Install</button> <button class="btn11 ml-2">Watch Demo <i class="fa-solid fa-play"></i></button>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="d-flex flex-row justify-content-center">
+                                    <img src="https://4kwallpapers.com/images/walls/thumbs_3t/8580.jpg" class="duty " />
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr>
+                    <div class="shop-categories">
+                        <h5>Shop Now</h5>
+                        <div class="scroller-2">
+                            <div class="scroller-item2">
+                                <img src="https://hips.hearstapps.com/hmg-prod/images/gettyimages-1058418382.jpg" class="card10">
+                                <div class="center-text">Game Tools</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://c4.wallpaperflare.com/wallpaper/555/800/960/battlefield-1-4k-pc-wallpaper-preview.jpg" class="card10">
+                                <div class="center-text">Action Games</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://play-lh.googleusercontent.com/HL5AcvVnavAL5N5J_GaIjCNasUfbqbuEeK7PAf3XDbpnUMlrALr-GEoDysJdAHS2dK0=w526-h296-rw" class="card10">
+                                <div class="center-text">Racing Games</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://static.vecteezy.com/system/resources/previews/001/879/493/original/practice-collaboration-and-problem-solving-in-teams-by-completing-puzzle-games-solving-problems-in-business-and-company-cooperation-and-teamwork-illustration-of-website-banner-software-poster-free-vector.jpg" class="card10">
+                                <div class="center-text">Puzzel Games</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUWN72yoXvGpUBZ6m5k_QQkczGunDdTbqAtg&usqp=CAU" class="card10">
+                                <div class="center-text">Cricket Games</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://png.pngtree.com/thumb_back/fh260/background/20220525/pngtree-football-goal-background-soccer-banner-image_1377768.jpg" class="card10">
+                                <div class="center-text ml-3">Football Games</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://www.gamingbible.com/cdn-cgi/image/width=1200,quality=70,format=jpeg,fit=contain,dpr=1/https%3A%2F%2Fs3-images.gamingbible.com%2Fs3%2Fcontent%2Fd62a5eb35f35cf941fdc93d7b388d6e6.png" class="card10">
+                                <div class="center-text">Marvel Games</div>
+                            </div>
+                            <div class="scroller-item2">
+                                <img src="https://www.gamespot.com/a/uploads/scale_landscape/225/2256286/3831052-2712404-8185902861-25201.jpeg" class="card10">
+                                <div class="center-text">Funny Games</div>
+                                <div class="d-flex flex-row justify-content-end">
+                                    <button class="btn1" id="viewMore">View More <i class="fa-sharp fa-solid fa-arrow-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <hr>
+                <footer>
+                    <div class="top">
+                        <div class="row">
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class=" m-3">
+                                    <h5>Contact</h5>
+                                    <p class="p3"> <i class="fa-solid fa-phone"></i> :+9603997532</p>
+                                    <p class="p3"> <i class="fa-solid fa-envelope"></i> :hemanth.ch@gmail.com
+                                        <br> <span class="p3"><i class="fa-solid fa-landmark"></i> Yadav nagar, </span>
+                                        <br> <span class="p3">Damarcherla</span>
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="m-3">
+                                    <h5>Payments Accepted</h5>
+                                    <div class="payment payment-card"><span class="p3"><img src="https://www.happycoders.in/wp-content/uploads/2020/09/razorpay.png" class="pay"> </span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-6 col-md-4 col-xl-3">
+                                <div class="m-3">
+                                    <h5>Children & Family</h5>
+                                    <p class="p3">Parent guide</p>
+                                    <p class="p3">Family Sharing</p>
+                                </div>
+                            </div>
+                            <div class="col-6 col-xl-3">
+                                <div class="m-2">
+                                    <span><img src="https://res.cloudinary.com/crunchbase-production/image/upload/c_lpad,h_256,w_256,f_auto,q_auto:eco,dpr_1/v7hrwudmu1agxikj4gob" class="logo">
+                                        Game Corner</span>
+                                    <p class="p3">All rights reseved</p>
+                                    <p class="p3">Designed with &#x1F9E1 and &#129504 by Ch.Hemanth</p>
+                                    <p class="iconp"><a href="#" class="fa-brands fa-facebook icon-social iconp"></a> <a href="https://www.linkedin.com/in/hemanth-chinthalacheruvu-23a253227" target="_blank" class="fa-brands fa-linkedin icon-social iconp"></a>
+                                        <a href="https://instagram.com/ch.hemanth_?igshd=Y2IzZGU1MTfh0Q==" target="_blank" class="fa-brands fa-instagram icon-social iconp"></a>
+                                        <a href="https://call.whatsapp.com/voice/eS5zUR1rMSPZz2M92Qmt42" target="_blank" class="fa-brands fa-whatsapp icon-social iconp"></a>
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+                <hr>
+                <footer class="bottom">
+                    <div class="legal p31"><span> Copyright <i class="fa-regular fa-copyright"></i> 2023 Game Corner Store</span></div>
+                    <div class="d-sm-none">|</div>
+                    <div class="legal p31"><span> Privacy Policy</span></div>
+                </footer>
+            </div>
+        </div>
+
+        <div id="sigInPageForm" class="logInForm mt-4">
+            <div class="Loginpage  mr-3">
+                <div class="d-flex flex-row justify-content-center">
+                    <button class="mt-2 button btn-primary" id="loginPageBtn">Login</button>
+                    <button class="SignIn btn-primary mt-2 button ml-2 " id="registerBtn">Register</button>
+                </div>
+
+                <div id="loginPageDetails">
+                    <form id="myForm">
+                        <div class="row">
+                            <div class="col-12 col-md-6 mt-2">
+                                <img src="https://www.arena-multimedia.com/uploads/sub_course_images/Game-Development-vr.png" class="logInImage">
+                                <hr>
+                            </div>
+                            <div class="col-12 col-md-6 msgInfo mt-2">
+                                <h5 class="mt-3" class="text-center">Login</h5>
+                                <label class="userText mt-2">User Id</label><br>
+                                <input type="text m-2" id="userInput" placeholder="Enter User ID"><br>
+                                <p id="userErrMsg"></p>
+                                <label class="userText mt-2">User Password</label> <br>
+                                <input type="password" id="userPswrd" placeholder="Enter Password"><br>
+                                <p id="userPswdErrMsg"></p>
+                                <input type="checkbox" class="mt-2" id="check">
+                                <label for="check" class="checkp">Remember me</label>
+                                <a href="#">
+                                    <h10 class="checkp ml-2">Forgot Password</h10>
+                                </a>
+                                <div class="mt-3">
+                                    <button class="button submit signbtn" type="submit">Login</button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+
+                <div id="registerDetails">
+                    <div class="row">
+                        <div class="col-12 col-md-6 msgInfo  mt-2">
+                            <h5 class="mt-3" class="text-center">Register Now</h5>
+                            <input type="text" placeholder="&#129337; Enter your name" class="mt-2" id="userName"><br>
+                            <input type="text" placeholder="&#128233; Enter your email" class="mt-2" id="userName"><br>
+                            <input type="password" placeholder="&#128584; create a password" class="mt-2" id="userName"><br>
+                            <input type="password" placeholder="&#128584; confirm a password" class="mt-2" id="userName"><br>
+                            <input type="checkbox" class="mt-2" id="check">
+                            <label for="check" class="checkp">I accept all terms & conditions</label>
+                            <div class="mt-2">
+                                <button class="button submit signbtn" type="submit">Register Now</button>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-6 mt-2">
+                            <img src="https://assets-prd.ignimgs.com/2023/04/04/mariomovie-poll-1680628906841.png" class="logInImage">
+                            <hr>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <div id="faqDetailsContainer" class="faqDetailC">
+            <h1 class="mt-5">Frequently asked questions </h1>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingOne">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                            Does Facebook Login For Gaming Support On ios devices ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Yes, Facebook Login for Gaming supports Limited mode.</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                            How Can I get your support ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">By one click on social media apps, type some text and send me ,& I send reply on or before 24 hours !Thannk You</div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                            How Can I pay For your products ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">Offering debit or credit card options, taking payments electronically using mobile payment methods, and ensuring your store has a good surveillance system
+                            & we verify every transaction from the user👤..</div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFour">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                            Can I get refund after purchasing your product ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            Yes, we provide you after purchasing 3 - 4 games in our website , and you get cashback after 3days 🗓
+                        </div>
+                    </div>
+                </div>
+
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingFive">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                            Do you have gift vouchers ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            we provide 3 vouchers >>
+                            by using your payment methods
+                            <li>Debit or Payment voucher</li>
+                            <li>Credit or Receipt voucher</li>
+                            <li>Supporting voucher</li>
+                            -No cashback (journal voucher)
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="flush-headingSix">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                            Which company is best for gaming accessories ?
+                        </button>
+                    </h2>
+                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                            <div class="row">
+                                <div class="col-6">
+                                    <li>Dell</li>
+                                    <li>Logitech International.</li>
+                                    <li>Razer Inc.</li>
+                                </div>
+                                <div class="col-6">
+                                    <li>Mad catz Global.</li>
+                                    <li>Ps4 #playstation</li>
+                                    <li>Xbox</li>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="contactId" class="contactDetailsList mt-5">
+            <div class="row">
+                <h5>Contact Us 📱 </h5>
+                <div class="msgInfo col-12 col-md-6">
+                    <h5>Send Us a Message</h5>
+                    <p class="p3">If you have any work from me or any types of queries related to my my website ,you can send message from here . It's my pleasure to help yo!u</p>
+                    <input type="text" placeholder="Enter your name" class="m-2"><br>
+                    <input type="text" placeholder="Enter your email" class="ml-2"><br>
+                    <textarea cols="30" rows="5" placeholder="Enter your Message" class="m-2"></textarea><br>
+                    <button class="btnSend btn m-2">Send Now</button>
+                </div>
+                <div class="col-12 col-md-6">
+                    <img src="https://xiotz.com/wp-content/uploads/2023/01/Contact-us.png" class="contactImg" />
+                </div>
+            </div>
+        </div>
+        <div id="cartContainer" class="cartContainer">
+            <img src='https://static-00.iconduck.com/assets.00/empty-cart-illustration-512x428-mcol2auz.png' class="imageCart">
+        </div>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js" integrity="sha512-3gJwYpMe3QewGELv8k/BX9vcqhryRdzRMxVfq6ngyWXwo03GFEzjsUm8Q7RZcHPHksttq7/GFoxjCVUjkjvPdw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
